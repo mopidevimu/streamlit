@@ -21,7 +21,7 @@ st.markdown(html_header, unsafe_allow_html=True)
 with st.container():
     xlsx_1, xlsx_2 = st.columns(2)
     with xlsx_1:
-        uploaded_file = st.file_uploader("Choose a Excel file 1 (XLSX)")
+        uploaded_file_1 = st.file_uploader("Choose a Excel file 1 (XLSX)")
         if uploaded_file_1 is not None:
           # Can be used wherever a "file-like" object is accepted
             dataframe = pd.read_excel(uploaded_file_1)
@@ -29,7 +29,7 @@ with st.container():
 
 
     with xlsx_2:
-        uploaded_file = st.file_uploader("Choose a Excel file 2 (XLSX)")
+        uploaded_file_2 = st.file_uploader("Choose a Excel file 2 (XLSX)")
         if uploaded_file_2 is not None:
             # Can be used wherever a "file-like" object is accepted
             dataframe = pd.read_excel(uploaded_file_2)
