@@ -28,7 +28,7 @@ with st.container():
             wb1 = load_workbook(filename = uploaded_file_1)
             st.write(wb1)
             res = len(wb1.sheetnames)
-            st.text(txt)
+            st.text(res)
             
 
 
