@@ -28,7 +28,7 @@ with st.container():
             wb1 = load_workbook(filename = uploaded_file_1)
             st.write(wb1)
             res = len(wb1.sheetnames)
-            st.write(res)
+            st.write("Number of sheets in this Xlsx1 files is: ",res)
             
 
 
@@ -37,5 +37,7 @@ with st.container():
         if uploaded_file_2 is not None:
             wb2 = load_workbook(filename = uploaded_file_2)
             st.write(wb2)
+            res2 = len(wb2.sheetnames)
+            st.write("Number of sheets in this Xlsx2 files is: ",res2)
 
 
