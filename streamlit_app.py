@@ -1,6 +1,8 @@
 # Loading Python Packages
 import streamlit as st
 import pandas as pd
+from openpyxl import load_workbook
+
 
 # Header of application
 html_header="""
@@ -23,16 +25,14 @@ with st.container():
     with xlsx_1:
         uploaded_file_1 = st.file_uploader("Choose a Excel file 1 (XLSX)")
         if uploaded_file_1 is not None:
-          # Can be used wherever a "file-like" object is accepted
-            dataframe = pd.read_excel(uploaded_file_1)
-            st.write(dataframe_1)
+            wb1 = load_workbook(filename = uploaded_file_1)
+            st.write(wb1)
 
 
     with xlsx_2:
         uploaded_file_2 = st.file_uploader("Choose a Excel file 2 (XLSX)")
         if uploaded_file_2 is not None:
-            # Can be used wherever a "file-like" object is accepted
-            dataframe = pd.read_excel(uploaded_file_2)
-            st.write(dataframe_2)
+            wb2 = load_workbook(filename = uploaded_file_2)
+            st.write(wb2)
 
 
