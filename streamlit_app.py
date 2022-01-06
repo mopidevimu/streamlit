@@ -28,7 +28,7 @@ with st.container():
             st.write(dataframe_1)
 
 
-    with xlsx_2
+    with xlsx_2:
         uploaded_file = st.file_uploader("Choose a Excel file 2 (XLSX)")
         if uploaded_file_2 is not None:
             # Can be used wherever a "file-like" object is accepted
