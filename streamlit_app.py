@@ -27,6 +27,9 @@ with st.container():
         if uploaded_file_1 is not None:
             wb1 = load_workbook(filename = uploaded_file_1)
             st.write(wb1)
+            res = len(wb1.sheetnames)
+            st.text(txt)
+            
 
 
     with xlsx_2:
