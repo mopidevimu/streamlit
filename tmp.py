@@ -8,24 +8,6 @@ import re
 
 
 def compareXl(wb1 : openpyxl.Workbook, wb2 : openpyxl.Workbook):
-    """
-    Compare
-    Compare any two versions having same template and collection unit
-
-    Workbook should be opened with data_only = False
-
-    Parameters
-    ----------------------
-    wb1 : Workbook
-        Workbook to be comared
-    wb2 : Workbook
-        Target Workbook
-
-    Returns
-    ----------------------
-    Workbook with highliting changes : Workbook
-
-    """
     logging.info('Function {} starts'.format('compareXl'))
     
     wb1data = analyzeWorkbook(wb1)
