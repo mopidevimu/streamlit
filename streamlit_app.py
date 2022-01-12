@@ -193,11 +193,13 @@ def analyzeWorkbook(wb : openpyxl.Workbook):
     logging.info(pprint.pformat(result))
     return result
 
-
 # st.download_button(   
 # label="Compared file",
 # data=wbComp,
 # file_name='compared-file.xlsx')
+
+
+
 if st.button('clik here'):
     logging.basicConfig(level=logging.DEBUG)
     wbComp = compareXl(wb1,wb2)
