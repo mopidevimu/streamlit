@@ -1,1 +1,1 @@
-# streamlit application for comparing XLSX files
+# Streamlit application for comparing XLSX files
